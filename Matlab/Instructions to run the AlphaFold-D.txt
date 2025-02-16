@@ -1,0 +1,53 @@
+Instructions to run the AlphaFold-D model
+
+Step 1
+make sure that the file labelled "AlphaFoldD.m" is in your path directory. 
+If it is not in the path directory you will have to run all the code in the AlphaFoldD.m file in the command window, 
+and create a function called AlphaFoldD.
+But that is redundant, the easier thing to do is just put the AlphaFoldD.m file in your path directory
+
+Step 2
+run the file called runmodel.m
+On line 17, in the command [imf,residual] = AlphaFoldD(GPR);
+you call the AlphaFoldD function. 
+The variable in the brackets (GPR) is the variable that the AlphaFold-D methodology will be applied on.
+
+Note, it is recommended that both "AlphaFoldD.m" and "runmodel.m" are in your path directory.
+Your excel data file should also be in your path directory.
+
+Step 3
+go to the Workspace and see the variable called "imf". 
+Open it. It will be a table with all the imfs. 
+The variable called residual in the Workspace will be the residuals.
+
+
+Step 4
+You can manually rename your IMFs and residual, then run the file "runmodel.m" on a new variable.
+To run on a new variable, go to line 17, and type your variable inside the brackets ( ). 
+
+
+
+Instructions to run the ANN Causality Test
+
+Step 1
+Make sure that your variables are named how you want them.
+
+Step 2
+The ANN Causality test file is labelled "ANNCausality.m"
+Go to lines 30 and 31 and change the variable names to what you want
+Y = bimf3;
+X = gimf3;
+
+So you can set Y to equal to whatever variable that you want to run the model on.
+You can set X to equal whatever variable that you want to run the model on.
+
+Step 3
+This is a test for 2 variables
+You are tested to see if X cause Y. So whatever variable that you want as X should be equal to X.
+Whatever variable that you want as Y should be equal to Y. 
+
+make sure that the "ANNCausality.m" file is in your path directory. 
+
+
+
+ 
